@@ -10,6 +10,18 @@ body {
   margin: 0;
   padding: 0;
 }
+/* colunm style */
+.column {
+  float: left;
+  width: 33.33%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
 .container {
   height: 60px;
@@ -181,6 +193,17 @@ body {
   .container .navbar ._Menus-show {
     left: 0;
   }
+  .column {
+    float: left;
+    width: 100%;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 }
 
 .body {
@@ -248,4 +271,39 @@ div#slider figure {
   color: rgb(255, 255, 255);
   margin-top: -60px;
   margin-left: 150px;
+}
+
+/* cart style */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
+h2{
+ margin-left: 70px;
+ margin-bottom: 20px;
 }
